@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+a{
+    color: #ffb600;
+    text-decoration: none;
+}
+
+.yellow-background {
+	color: #000;
+	background-color: #ffb600;
+}
+
+.row.yellow-background {
+	margin-bottom: 0;
+}
+
+.ducky-nav {
+	padding: 0 20px;
+	background-color: #ffb600;
+}
+
+.main-navigation a {
+	color: #000;
+	text-transform: uppercase;
+}
+
+.ducky-header {
+	position: relative;
+	overflow: hidden;
+}
+
+.ducky-header .ducky-header--background {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.ducky-header .ducky-header--overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	text-align: center;
+	padding: 80px 100px;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,182,0,.8);
+}
+
+.ducky-header .ducky-header--overlay img {
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	height: auto;
+}
+
+.ducky-quicktext {
+	padding: 10%;
+}
+
+.ducky-black-button {
+	color: #fff;
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000;
+}
+
+.ducky-yellow-button {
+	color: #000;
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ffb600;
+}
+
+.ducky-section--title {
+	text-align: center;
+	margin: 50px auto;
+	text-transform: uppercase;
+}
+
+.ducky-service img {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.ducky-service h3 {
+	font-size: 1.8em;
+}
+
+.ducky-service p {
+	width: 70%;
+	padding: 0;
+	margin: 10px auto;
+}
+
+.responsive-img {
+	display: block;
+	margin: auto;
+}
+
+footer {
+	color: #fff;
+	font-size: .8em;
+}
+
+footer .ducky-footer--title{
+    color: #ffb600;
+	font-family: Montserrat, sans-serif;
+	font-weight: 900;
+    text-transform: uppercase;
+}
+
+footer .ducky-social--icons img {
+	display: inline-block;
+	width: 15%;
+	margin-right: 10px;
+}
+
+footer .ducky-footer--links a {
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+}
+
+footer a{
+    color: #ffb600;
+	text-transform: uppercase;
+	font-family: Montserrat, sans-serif;
+}
