@@ -3,7 +3,7 @@
 */
 
 body{
-    margin: 0;
+    margin: 64px 0 0;
 	color: #333333;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -11,6 +11,10 @@ body{
 h1, h2, h3, h4, h5, h6, h7{
     font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
+}
+
+strong {
+	font-weight: 700;
 }
 
 a{
@@ -55,6 +59,15 @@ footer a{
 	CLASES
 */
 
+.brand-logo {
+	display: block;
+}
+
+.brand-logo img {
+	width: 25px;
+	height: auto;
+}
+
 .yellow-background {
 	color: #000;
 	background-color: #ffb600;
@@ -93,6 +106,11 @@ footer a{
 }
 
 .ducky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
 	padding: 0 20px;
 	background-color: #ffb600;
 }
@@ -111,6 +129,23 @@ footer a{
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.ducky-header .cuack-title {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	font-family: Montserrat, sans-serif;
+	font-weight: 900;
+	font-size: 250px;
+	text-transform: uppercase;
+	color: #ffb600;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 50px rgba(0,0,0,.8);
 }
 
 .ducky-header .ducky-header--overlay {
@@ -211,7 +246,7 @@ footer a{
 }
 
 .cuaak:hover {
-	/*animation: sunshine 1s 1 forwards;*/
+	animation: sunshine 1s infinite;
 }
 
 .cuaak .duck{
@@ -242,11 +277,81 @@ footer a{
 	margin: auto;
 }
 
-/*
-	MEDIA QUERIES
-*/
+.ducky-service--list {
+	display: block;
+	width: 33.3334%;
+	float: left;
+	padding: 0 20px 0 0;
+	font-size: .9em;
+	margin: 50px 0;
+}
+
+.ducky-service--list dt {
+	font-weight: 700;
+}
+
+.ducky-service--list dd {
+	-webkit-margin-start: 15px;
+	-moz-margin-start: 15px;
+}
+
+.ducky-profile {
+	display: block;
+	width: 33.3334%;
+	float: left;
+}
+
+.ducky-profile:nth-child(3n+1) {
+	clear: both;
+}
+
+.ducky-profile--content {
+	padding: 20px 15%;
+	font-size: .9em;
+}
+
+.ducky-profile img {
+	width: 100%;
+	height: auto;
+}
+
+.ducky-profile--name span {
+	color: #ffb600;
+}
+
+.ducky-profile--job {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ffb600;
+}
+/* MEDIA QUERIES */
+
+/* TABLETS */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+	.ducky-profile {
+		width: 50%;
+	}
+
+	.ducky-profile:nth-child(2n+1) {
+		clear: both;
+	}
+
+	.ducky-profile:nth-child(3n+1) {
+		clear: none;
+	}
+}
+
+/* MÓVILES */
 
 @media screen and (max-width: 600px) {
+	body {
+		margin-top: 56px;
+	}
+
+	h2 {
+		font-size: 2.7rem;
+	}
+
 	.ducky-header .ducky-header--overlay {
 		width: 80%;
 		padding: 40px;
@@ -256,6 +361,19 @@ footer a{
 		text-align: right;
 		margin-bottom: 25px;
 	}
+
+	.ducky-header .cuack-title {
+		font-size: 90px;
+	}
+
+	.ducky-service--list {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.ducky-profile {
+		width: 100%;
+	}
 }
 
 /*
@@ -263,8 +381,14 @@ footer a{
 */
 
 @keyframes sunshine {
-	to {
-		transform: scale(1.5);
+	0% {
+		background-color: #ffb600;
+	}
+	50% {
+		background-color: deepskyblue;
+	}
+	100% {
+		background-color: orangered;
 	}
 }
 
