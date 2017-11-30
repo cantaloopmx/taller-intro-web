@@ -68,6 +68,10 @@ footer a{
 	height: auto;
 }
 
+.section {
+	padding: 50px 0;
+}
+
 .yellow-background {
 	color: #000;
 	background-color: #ffb600;
@@ -136,6 +140,11 @@ footer a{
 	display: block;
 	top: 50%;
 	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 50px rgba(0,0,0,.8);
+}
+
+.cuack-title {
 	font-family: Montserrat, sans-serif;
 	font-weight: 900;
 	font-size: 250px;
@@ -144,11 +153,10 @@ footer a{
 	margin: 0;
 	padding: 0;
 	line-height: 1;
-	transform: translate(-50%, -50%);
-	text-shadow: 0 0 50px rgba(0,0,0,.8);
+	text-align: center;
 }
 
-.ducky-header .cuack-title.small {
+.cuack-title.small {
 	font-size: 100px;
 }
 
@@ -279,6 +287,8 @@ footer a{
 .responsive-img {
 	display: block;
 	margin: auto;
+	width: 100%;
+	max-width: none;
 }
 
 .ducky-service--list {

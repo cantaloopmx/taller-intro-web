@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ducky - Quienes Somos</title>
+    <title>Ducky - Contacto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" type="image/png" href="assets/images/cuack_inicio.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,400i,700" rel="stylesheet" />
@@ -43,35 +43,27 @@
 		</div>
 		<div class="col s12 m6 l5">
 			<form action="http://onoff.cantaloop.mx/mailing/sendmail.php" method="post">
-				<div class="field">
-					<div class="control">
-						<label for="fullname" class="label">Nombre completo</label>
-						<input type="text" class="input" name="fullname" id="fullname" placeholder="Nombre Completo" />
-					</div>
+				<div class="input-field">
+					<input type="text" class="input" name="fullname" id="fullname" />
+					<label for="fullname" class="label">Nombre completo</label>
 				</div>
 
-				<div class="field">
-					<div class="control">
-						<label for="email" class="label">E-mail</label>
-						<input type="email" class="input" name="email" id="email" placeholder="ejemplo@ducky.com" />
-					</div>
+				<div class="input-field">
+					<input type="email" class="input" name="email" id="email" />
+					<label for="email" class="label">E-mail</label>
 				</div>
 
-				<div class="field">
-					<div class="control">
-						<label for="subject" class="label">Asunto</label>
-						<input type="text" class="input" name="subject" id="subject"  placeholder="Asunto de este e-mail" />
-					</div>
+				<div class="input-field">
+					<label for="subject" class="label">Asunto</label>
+					<input type="text" class="input" name="subject" id="subject" />
 				</div>
 
-				<div class="field">
-					<div class="control">
-						<label for="message" class="label">Mensaje</label>
-						<textarea name="message" id="message" cols="30" rows="10" class="materialize-textarea" placeholder="Escríbenos un mensajito..."></textarea>
-					</div>
+				<div class="input-field">
+					<textarea name="message" id="message" cols="30" rows="10" class="materialize-textarea"></textarea>
+					<label for="message" class="label">Mensaje</label>
 				</div>
 
-				<div class="field">
+				<div class="input-field">
 					<div class="control right-align">
 						<button type="reset" class="btn grey">Borrar formulario</button>
 						<button type="submit" class="btn green">Enviar</button>
@@ -116,5 +108,8 @@
         </div>
     </div>
 </footer>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/materialize.min.js"></script>
 </body>
 </html>
