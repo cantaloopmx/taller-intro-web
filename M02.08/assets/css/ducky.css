@@ -1,0 +1,73 @@
+/*
+	ELEMENTOS
+*/
+
+body{
+    margin: 64px 0 0;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a{
+    color: #ffb600;
+    text-decoration: none;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	padding: 0 20px;
+	background-color: #ffb600;
+}
+
+nav img{
+	width: 25px;
+	height: auto;
+}
+
+nav ul a {
+	color: #000;
+	text-transform: uppercase;
+}
+
+footer {
+	color: #fff;
+	font-size: .8em;
+}
+
+footer p {
+	margin: 0 0 10px 0;
+}
+
+
+
+footer{
+	color: #ffb600;
+	font-family: Montserrat, sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+footer img {
+	display: inline-block;
+	width: 15%;
+	margin: 0 10px 15px 0;
+}
+
+footer a{
+	color: #ffb600;
+	text-transform: uppercase;
+	font-family: Montserrat, sans-serif;
+}
