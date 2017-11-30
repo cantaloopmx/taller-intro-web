@@ -55,7 +55,7 @@
 
 <!-- EMPRESA -->
 <section class="row yellow-background" id="servicios">
-	<div class="col s12 m12 l12 center-align">
+	<div class="col s12 m12 l10 offset-l1 center-align">
 		<h3>En Duckie te ofrecemos los siguientes servicios ¡todos van calados y garantizados!</h3>
 	</div>
 
@@ -63,7 +63,8 @@
 		<div class="ducky-service--list">
 			<h5>Marketing</h5>
 			<p>El contenido es el rey, por eso pensamos Outside the box. Todas nuestras campañas son hechas a la medida, 360 grados, que aseguran el mayor impacto. Tenemos todo lo que necesitas en un solo lugar. <strong>#SomosDoers</strong></p>
-			<ul class="browser-default">
+			<button type="button" id="marketing-button" class="btn-flat">Ver más</button>
+			<ul class="browser-default" id="marketing">
 				<li>Advertising</li>
 				<li>Digital</li>
 				<li>Social Media</li>
@@ -78,10 +79,9 @@
 		</div>
 		<div class="ducky-service--list">
 			<h5>Web Development</h5>
-			<p>
-				Nuestros desarrolladores son expertos en Java, J2EE, Ruby, Python, PHP, C++, WIX, WP, etc. Creamos el sitio, app o desarrollo de tus sueños, solo tienes que imaginarlo. Hacemos más con menos.
-			</p>
-			<ol>
+			<p>Nuestros desarrolladores son expertos en Java, J2EE, Ruby, Python, PHP, C++, WIX, WP, etc. Creamos el sitio, app o desarrollo de tus sueños, solo tienes que imaginarlo. Hacemos más con menos.</p>
+			<button type="button" id="development-button" class="btn-flat">Ver más</button>
+			<ol id="development">
 				<li>Web design</li>
 				<li>Development</li>
 				<li>E-commerce</li>
@@ -96,10 +96,9 @@
 		</div>
 		<div class="ducky-service--list">
 			<h5>Branding</h5>
-			<p>
-				Hacemos que tu marca sea la más eficiente y efectiva. Si quieres que tu logo sea tan recordado como Coca Cola, somos los indicados. 288,519 empresas no pueden estar equivocadas.
-			</p>
-			<dl>
+			<p>Hacemos que tu marca sea la más eficiente y efectiva. Si quieres que tu logo sea tan recordado como Coca Cola, somos los indicados. 288,519 empresas no pueden estar equivocadas.</p>
+			<button type="button" id="branding-button" class="btn-flat">Ver más</button>
+			<dl id="branding">
 				<dt>Branding strategy</dt>
 				<dd>Creamos tu presencia en línea</dd>
 				<dt>Communication strategy</dt>
@@ -241,5 +240,18 @@
 </footer>
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/materialize.min.js"></script>
+<script>
+	$('#marketing-button').on('click', function(){
+		$('#marketing').toggleClass('active');
+	});
+
+	$('#development-button').on('click', function(){
+		$('#development').toggleClass('active');
+	});
+
+	$('#branding-button').on('click', function(){
+		$('#branding').toggleClass('active');
+	});
+</script>
 </body>
 </html>
