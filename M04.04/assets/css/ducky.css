@@ -310,6 +310,19 @@ footer a{
 	margin: 50px 0;
 }
 
+.ducky-service--list ul,
+.ducky-service--list ol,
+.ducky-service--list dl {
+	overflow: hidden;
+	max-height: 0;
+}
+
+.ducky-service--list ul.active,
+.ducky-service--list ol.active,
+.ducky-service--list dl.active {
+	max-height: 400px;
+}
+
 .ducky-service--list dt {
 	font-weight: 700;
 }
