@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="assets/css/ducky.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img src="assets/images/icons/logo_ducky_simple.svg" width="20px"></a>
+<head>
+    <title>Ducky - Quienes Somos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="assets/images/cuack_inicio.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,400i,700" rel="stylesheet" />
+    <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/ducky.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
 
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="quienes-somos.html">Quiénes somos</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </header>
+<!-- NAVEGACIÓN -->
+<nav class="ducky-nav z-depth-0">
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><img src="assets/images/icons/logo_ducky_simple.svg" /></a>
 
-        <section>
+        <ul class="right main-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quienes-somos.html">Quiénes somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
 
-            <h1>Concuácktanos</h1>
 
-            <form>
-                <table>
-                    <tr>
-                        <td>
-                            <label for="fullname">Nombre del pato:</label>
-                        </td>
-                        <td>
-                            <input type="text" name="fullname" id="fullname" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="subject">Asunto:</label></td>
-                        <td><input type="text" name="subject" id="subject" /></td>
-                    </tr>
-                    <tr>
-                        <td><label for="area">Área de contacto:</label></td>
-                        <td>
-                            <select name="area" id="area">
-                                <option value="1">Ventas y cotizaciones</option>
-                                <option value="2">Soporte técnico</option>
-                                <option value="3">Seguimiento de proyectos</option>
-                                <option value="4">Administración y finanzas</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="message">Mensaje:</label></td>
-                        <td><textarea name="message" id="message"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <label for="neswletter">
-                                <input type="checkbox" name="newsletter" id="neswletter">
-                                Deseo suscribirme al newsleter
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <button>Enviar graznido</button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </section>
+<!-- ENCABEZADO -->
+<header class="ducky-header">
+    <img src="assets/images/banner_mail.png" class="ducky-header--background" />
+    <p class="cuack-title small">Concuácktanos</p>
+</header>
 
-        <footer>
-            <img src="assets/images/icons/footer_ducky.svg" width="20%">
+<!-- FORMULARIO Y DIRECCIÓN -->
+<section class="section">
+	<div class="row">
+		<div class="col s12 m6 l5 offset-l1">
+			<h4>Echanos un cuack</h4>
+			<p>Paseo Miguel de la Madrid Hurtado #55 int 15<br />
+				Col. Residencial Esmeralda <br />
+				28017 Colima, Colima
+			</p>
+			<p><strong>hola@ducky.com</strong></p>
+		</div>
+		<div class="col s12 m6 l5">
+			<form action="http://onoff.cantaloop.mx/mailing/sendmail.php" method="post">
+				<div class="field">
+					<div class="control">
+						<label for="fullname" class="label">Nombre completo</label>
+						<input type="text" class="input" name="fullname" id="fullname" placeholder="Nombre Completo" />
+					</div>
+				</div>
 
-            <b>Redes sociales</b>
-            <img src="assets/images/icons/redes-01.svg" width="20px">
-            <img src="assets/images/icons/redes-02.svg" width="20px">
-            <img src="assets/images/icons/redes-03.svg" width="20px">
+				<div class="field">
+					<div class="control">
+						<label for="email" class="label">E-mail</label>
+						<input type="email" class="input" name="email" id="email" placeholder="ejemplo@ducky.com" />
+					</div>
+				</div>
 
-            <b>Nosotros</b>
-            <p>Somos bien guay, porque hacemos cosas chidas para nusetros clientes</p>
-            <p>Ver más acerca de nosotros</p>
+				<div class="field">
+					<div class="control">
+						<label for="subject" class="label">Asunto</label>
+						<input type="text" class="input" name="subject" id="subject"  placeholder="Asunto de este e-mail" />
+					</div>
+				</div>
 
-            <b>Navegación</b>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </footer>
-    </body>
+				<div class="field">
+					<div class="control">
+						<label for="message" class="label">Mensaje</label>
+						<textarea name="message" id="message" cols="30" rows="10" class="materialize-textarea" placeholder="Escríbenos un mensajito..."></textarea>
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="control right-align">
+						<button type="reset" class="btn grey">Borrar formulario</button>
+						<button type="submit" class="btn green">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<footer class="page-footer black">
+    <div class="container">
+        <div class="row">
+            <div class="col s2 m3 l2">
+                <img src="assets/images/icons/footer_ducky.svg" />
+            </div>
+            <div class="col s10 m3 l3 offset-l1 ducky-social--icons">
+                <p class="ducky-footer--title">Redes sociales</p>
+                <img src="assets/images/icons/redes-01.svg" />
+                <img src="assets/images/icons/redes-02.svg" />
+                <img src="assets/images/icons/redes-03.svg" />
+            </div>
+            <div class="col s6 m3 l3">
+                <p class="ducky-footer--title">Nosotros</p>
+                <p>Somos bien guay, porque hacemos cosas chidas para nusetros clientes</p>
+                <a href="quienes-somos.html">Ver más acerca de nosotros</a>
+            </div>
+            <div class="col s6 m3 l3">
+                <p class="ducky-footer--title">Navegación</p>
+                <ul class="ducky-footer--links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <a href="mailto:hola@ducky.com">hola@ducky.com</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            &copy; 2017 Todos los derechos reservados Ducky Genial, S.A. de C.V.
+        </div>
+    </div>
+</footer>
+</body>
 </html>

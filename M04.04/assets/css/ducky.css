@@ -148,6 +148,10 @@ footer a{
 	text-shadow: 0 0 50px rgba(0,0,0,.8);
 }
 
+.ducky-header .cuack-title.small {
+	font-size: 100px;
+}
+
 .ducky-header .ducky-header--overlay {
 	position: absolute;
 	top: 50%;
@@ -364,6 +368,10 @@ footer a{
 
 	.ducky-header .cuack-title {
 		font-size: 90px;
+	}
+
+	.ducky-header .cuack-title.small {
+		font-size: 30px;
 	}
 
 	.ducky-service--list {
