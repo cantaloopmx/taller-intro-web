@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ducky - Quienes Somos</title>
+    <title>Ducky - Quiénes Somos</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="assets/images/cuack_inicio.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,400i,800" rel="stylesheet">
@@ -15,7 +15,7 @@
         <a href="index.html"><img src="assets/images/icons/logo_ducky_simple.svg" /></a>
 
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="quienes-somos.html">Quiénes somos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
@@ -28,7 +28,6 @@
     <img src="assets/images/banner_mail.png" />
     <p>Concuácktanos</p>
 </header>
-
 
 <!-- FORMULARIO Y DIRECCIÓN -->
 <section>
@@ -43,40 +42,54 @@
         </div>
         <div>
             <form action="http://onoff.cantaloop.mx/mailing/sendmail.php" method="post">
-                <div>
-                    <div>
-                        <label for="fullname">Nombre completo</label>
-                        <input type="text" name="fullname" id="fullname" placeholder="Nombre Completo" />
-                    </div>
-                </div>
+                <table border="0">
+                    <tr>
+                        <td>
+                            <label for="fullname">Nombre completo</label>
+                            <input type="text" class="input" name="fullname" id="fullname" />
 
-                <div>
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="ejemplo@ducky.com" />
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <label for="subject">Asunto</label>
-                        <input type="text" name="subject" id="subject"  placeholder="Asunto de este e-mail" />
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Escríbenos un mensajito..."></textarea>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <button type="reset">Borrar formulario</button>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </div>
+                        </td>
+                        <td>
+                            <label for="email">E-mail</label>
+                            <input type="email" class="input" name="email" id="email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="subject">Asunto</label>
+                            <input type="text" class="input" name="subject" id="subject" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="materialize-textarea"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="department">¿Qué departamento deseas contactar?</label>
+                            <select name="department" id="department" class="browser-default">
+                                <option value="" selected>Seleccione uno</option>
+                                <option value="Ventas">Ventas</option>
+                                <option value="Soporte">Soporte</option>
+                                <option value="Sugerencias">Sugerencias</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="checkbox" name="terms" id="terms" />
+                            <label for="terms">Acepto los términos y condiciones</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="reset" class="btn grey">Borrar formulario</button>
+                        </td>
+                        <td class="right-align">
+                            <button type="submit" class="btn green">Enviar</button>
+                        </td>
+                    </tr>
+                </table>
             </form>
         </div>
     </div>
