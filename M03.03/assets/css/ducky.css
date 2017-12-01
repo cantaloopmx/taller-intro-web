@@ -1,0 +1,363 @@
+/*
+	ELEMENTOS
+*/
+
+body{
+    margin: 64px 0 0;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a{
+    color: #ffb600;
+    text-decoration: none;
+}
+
+footer {
+	color: #fff;
+	font-size: .8em;
+}
+
+footer p {
+	margin: 0 0 10px 0;
+}
+
+footer .ducky-footer--title{
+	color: #ffb600;
+	font-family: Montserrat, sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+footer .ducky-social--icons img {
+	display: inline-block;
+	width: 15%;
+	margin: 0 10px 15px 0;
+}
+
+footer .ducky-footer--links a {
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+}
+
+footer a{
+	color: #ffb600;
+	text-transform: uppercase;
+	font-family: Montserrat, sans-serif;
+}
+
+/*
+	CLASES
+*/
+
+.brand-logo {
+	display: block;
+}
+
+.brand-logo img {
+	width: 25px;
+	height: auto;
+}
+
+.section {
+	padding: 50px 0;
+}
+
+.yellow-background {
+	color: #000;
+	background-color: #ffb600;
+}
+
+.yellow-background img {
+	transition: all .5s;
+}
+
+.yellow-background a:not(.ducky-black-button) {
+	display: block;
+	position: relative;
+}
+
+.yellow-background a:not(.ducky-black-button):hover img {
+	filter: blur(5px);
+}
+
+.yellow-background p::first-letter {
+	font-size: 150%;
+	font-weight: 700;
+}
+
+.yellow-background p::first-line {
+	font-size: 150%;
+	line-height: 1;
+}
+
+.yellow-background a:hover::after {
+	display: block;
+	position: absolute;
+	content: "Quiénes Somos";
+	top: 50%;
+	left: 50%;
+	color: #000;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+}
+
+.row.yellow-background {
+	margin-bottom: 0;
+}
+
+.ducky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	padding: 0 20px;
+	background-color: #ffb600;
+}
+
+.main-navigation a {
+	color: #000;
+	text-transform: uppercase;
+}
+
+.ducky-header {
+	position: relative;
+	overflow: hidden;
+}
+
+.ducky-header .ducky-header--background {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.ducky-header .cuack-title {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 50px rgba(0,0,0,.8);
+}
+
+.cuack-title {
+	font-family: Montserrat, sans-serif;
+	font-weight: 900;
+	font-size: 250px;
+	text-transform: uppercase;
+	color: #ffb600;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	text-align: center;
+}
+
+.cuack-title.small {
+	font-size: 100px;
+}
+
+.ducky-header .ducky-header--overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	text-align: center;
+	padding: 80px 100px;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,182,0,.8);
+}
+
+.ducky-header .ducky-header--overlay img {
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	height: auto;
+}
+
+.ducky-quicktext {
+	padding: 10%;
+}
+
+.ducky-black-button {
+	color: #fff;
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000;
+	transition: background-color .5s;
+}
+
+.ducky-black-button:hover {
+	background-color: #444;
+}
+
+.ducky-yellow-button {
+	color: #000;
+	padding: 10px 30px;
+	border: 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ffb600;
+	transition: all .5s;
+}
+
+.ducky-yellow-button:hover {
+	color: #ffb600;
+	background-color: #000;
+}
+
+.ducky-section--title {
+	text-align: center;
+	margin: 50px auto;
+	text-transform: uppercase;
+}
+
+.ducky-service .image {
+	display: block;
+	position: relative;
+	width: 80%;
+	height: 0;
+	margin: 0 auto;
+	padding: 0 0 80% 0;
+	border-radius: 50%;
+	background-color: #ffb600;
+}
+
+.ducky-service .image img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 80%;
+	height: auto;
+}
+
+.ducky-service h3 {
+	font-size: 1.8em;
+}
+
+.ducky-service p {
+	width: 70%;
+	padding: 0;
+	margin: 10px auto;
+}
+
+.cuaak {
+	position: relative;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+.cuaak:hover {
+	animation: sunshine 1s infinite;
+}
+
+.cuaak .duck{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+.cuaak:hover .duck {
+	animation: swimming 5s infinite both;
+}
+
+.cuaak .waves {
+	position: absolute;
+	bottom: -50%;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	height: auto;
+}
+
+.cuaak:hover .waves {
+	animation: rising-tide 1s 1 forwards;
+}
+
+.responsive-img {
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: none;
+}
+
+.ducky-service--list {
+	display: block;
+	width: 33.3334%;
+	float: left;
+	padding: 0 20px 0 0;
+	font-size: .9em;
+	margin: 50px 0;
+}
+
+.ducky-service--list ul,
+.ducky-service--list ol,
+.ducky-service--list dl {
+	overflow: hidden;
+	max-height: 0;
+}
+
+.ducky-service--list ul.active,
+.ducky-service--list ol.active,
+.ducky-service--list dl.active {
+	max-height: 400px;
+}
+
+.ducky-service--list dt {
+	font-weight: 700;
+}
+
+.ducky-service--list dd {
+	-webkit-margin-start: 15px;
+	-moz-margin-start: 15px;
+}
+
+.ducky-profile {
+	display: block;
+	width: 33.3334%;
+	float: left;
+}
+
+.ducky-profile:nth-child(3n+1) {
+	clear: both;
+}
+
+.ducky-profile--content {
+	padding: 20px 15%;
+	font-size: .9em;
+}
+
+.ducky-profile img {
+	width: 100%;
+	height: auto;
+}
+
+.ducky-profile--name span {
+	color: #ffb600;
+}
+
+.ducky-profile--job {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ffb600;
+}
